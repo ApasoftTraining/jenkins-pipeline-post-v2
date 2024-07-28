@@ -44,6 +44,7 @@ pipeline {
         // One or more steps need to be included within each condition's block.
         echo 'the deployment has worked'
         archiveArtifacts allowEmptyArchive: true, artifacts: 'shopping/*', followSymlinks: false
+        cleanWs()
        }
        failure {
         // One or more steps need to be included within each condition's block.
