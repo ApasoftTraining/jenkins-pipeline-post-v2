@@ -37,8 +37,9 @@ pipeline {
 
     post {
         always {
-            echo 'Siempre se ejecuta'
+            echo 'These steps are always executed'
         }
+       
         success {
         // One or more steps need to be included within each condition's block.
         echo 'the deployment has worked'
