@@ -38,7 +38,7 @@ pipeline {
     post {
         always {
             echo 'Siempre se ejecuta'
-            
+            cleanWs()
         }
         success {
         // One or more steps need to be included within each condition's block.
@@ -49,3 +49,4 @@ pipeline {
         echo 'An error has ocurred'
       }
  }
+}
